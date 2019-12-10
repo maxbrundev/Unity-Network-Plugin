@@ -89,7 +89,7 @@ NETWORK_API int ReceiveFrom(UnityPlugin::NetworkAPI* networkPtr, SOCKET sock, un
 	if (networkPtr == NULL)
 		return 1;
 
-	networkPtr->RecvFrom(sock, dataPacket, sockClient);
+	return networkPtr->RecvFrom(sock, dataPacket, sockClient);
 }
 
 UnityPlugin::NetworkAPI::NetworkAPI()
